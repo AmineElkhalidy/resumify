@@ -1,10 +1,4 @@
 <div align="center">
-  <br />
-  <a href="#">
-    <img src="public/screenshot/home.png" alt="Resumify - AI Resume Analyzer" width="100%">
-  </a>
-  <br />
-
   <div>
     <img alt="React" src="https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black">
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">

@@ -1,103 +1,202 @@
 <div align="center">
   <br />
-   <a href='https://ai-resume-analyzer-delta-ten.vercel.app/'>
-      <img src="public/screenshot/home.png" alt="Project Banner">
-   </a>
+  <a href="#">
+    <img src="public/screenshot/home.png" alt="Resumify - AI Resume Analyzer" width="100%">
+  </a>
   <br />
 
   <div>
-    <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
-        <img src="https://img.shields.io/badge/-Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-        <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
-    <img alt="Static Badge" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
+    <img alt="React" src="https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+    <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+    <img alt="Puter.js" src="https://img.shields.io/badge/Puter.js-6366F1?style=for-the-badge&logoColor=white">
   </div>
 
-  <h3 align="center">AI Resume Analyzer</h3>
+  <h1>RESUMIFY</h1>
+  <h3>AI-Powered Resume Analyzer</h3>
 
-   <div align="center">
-     AI Resume Analyzer is a modern web application that analyzes resumes using artificial intelligence.
-    <a href="https://ai-resume-analyzer-delta-ten.vercel.app/">
-        <span>
-            Click to visit
-         </span>
-    </a>
-    
-
+  <p>
+    Get instant AI-powered feedback on your resume. Improve your ATS score, enhance content quality, and land your dream job.
+  </p>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+---
 
-1. ✨ [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
+## ✨ Features
 
+- 🔐 **Seamless Authentication** - Browser-based auth using Puter.js, no backend setup required
+- 📄 **Resume Upload & Storage** - Securely upload and store all your resumes in one place
+- 🤖 **AI-Powered Analysis** - Get detailed feedback using Claude AI for comprehensive resume evaluation
+- 📊 **ATS Score** - See how well your resume performs with Applicant Tracking Systems
+- 💡 **Actionable Tips** - Receive personalized recommendations to improve your resume
+- 📱 **Responsive Design** - Works beautifully on desktop, tablet, and mobile devices
+- 🎨 **Modern UI** - Clean, polished interface with smooth animations
 
-## <a name="introduction">✨ Introduction</a>
+## 🛠️ Tech Stack
 
-Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Implement seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each listing—all wrapped in a clean, reusable UI.
+| Technology | Description |
+|------------|-------------|
+| **[React 19](https://react.dev/)** | Latest React with improved performance and features |
+| **[React Router 7](https://reactrouter.com/)** | Modern routing with SSR support, data loaders, and error boundaries |
+| **[Puter.js](https://puter.com/)** | Client-side SDK for auth, storage, database, and AI—no backend needed |
+| **[Tailwind CSS 4](https://tailwindcss.com/)** | Utility-first CSS framework for rapid UI development |
+| **[TypeScript](https://www.typescriptlang.org/)** | Type-safe JavaScript for better developer experience |
+| **[Vite](https://vite.dev/)** | Lightning-fast build tool and dev server |
+| **[Zustand](https://github.com/pmndrs/zustand)** | Minimal, hook-based state management |
 
+## 🚀 Quick Start
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+### Prerequisites
 
-- **[React](https://react.dev/)** is a popular open‑source JavaScript library for building user interfaces using reusable components and a virtual DOM, enabling efficient, dynamic single-page and native apps.
+- Node.js 18+ installed
+- npm or yarn package manager
 
-- **[React Router v7](https://reactrouter.com/)** is the go‑to routing library for React apps, offering nested routes, data loaders/actions, error boundaries, code splitting, and SSR support—all with a smooth upgrade path from v6.
+### Installation
 
-- **[Puter.js](https://jsm.dev/resumind-puterjs)** is a tiny client‑side SDK that adds serverless auth, storage, database, and AI (GPT, Claude, DALL·E, OCR…) straight into your browser app—no backend needed and costs borne by users.
-
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to design custom user interfaces by applying low-level utility classes directly in HTML, streamlining the design process.
-
-- **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection for developers, making it ideal for building large-scale applications.
-
-- **[Vite](https://vite.dev/)** is a fast build tool and dev server using native ES modules for instant startup, hot‑module replacement, and Rollup‑powered production builds—perfect for modern web development.
-
-- **[Zustand](https://github.com/pmndrs/zustand)** is a minimal, hook-based state management library for React. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
-
-## <a name="features">🔋 Features</a>
-
-👉 **Easy & convenient auth**: Handle authentication entirely in the browser using Puter.js—no backend or setup required.
-
-👉 **Resume upload & storage**: Let users upload and store all their resumes in one place, safely and reliably.
-
-👉 **AI resume matching**: Provide a job listing and get an ATS score with custom feedback tailored to each resume.
-
-👉 **Reusable, modern UI**: Built with clean, consistent components for a great-looking and maintainable interface.
-
-👉 **Code Reusability**: Leverage reusable components and a modular codebase for efficient development.
-
-👉 **Cross-Device Compatibility**: Fully responsive design that works seamlessly across all devices.
-
-👉 **Modern UI/UX**: Clean, responsive design built with Tailwind CSS and shadcn/ui for a sleek user experience.
-
-And many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-
-**Cloning the Repository**
+1. **Clone the repository**
 
 ```bash
-git clone https://github.com/Samir-Azam/ai-resume-analyzer.git
-cd ai-resume-analyzer
+git clone https://github.com/yourusername/resumify.git
+cd resumify
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
+2. **Install dependencies**
 
 ```bash
 npm install
 ```
 
-**Running the Project**
+3. **Start the development server**
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+4. **Open your browser**
+
+Navigate to [http://localhost:5173](http://localhost:5173)
+
+That's it! 🎉 No environment variables or API keys needed.
+
+## 📁 Project Structure
+
+```
+resumify/
+├── app/
+│   ├── components/      # Reusable UI components
+│   │   ├── Accordion.tsx
+│   │   ├── ATS.tsx
+│   │   ├── Details.tsx
+│   │   ├── FileUploader.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── ResumeCard.tsx
+│   │   ├── ScoreCircle.tsx
+│   │   ├── ScoreGauge.tsx
+│   │   └── Summary.tsx
+│   ├── libs/            # Utility functions and stores
+│   │   ├── pdf2img.ts
+│   │   ├── puter.ts     # Puter.js integration
+│   │   └── utils.ts
+│   ├── routes/          # Page components
+│   │   ├── auth.tsx     # Authentication page
+│   │   ├── home.tsx     # Dashboard/home page
+│   │   ├── resume.tsx   # Resume detail view
+│   │   ├── Upload.tsx   # Upload & analyze page
+│   │   └── wipe.tsx     # Data management page
+│   ├── app.css          # Global styles
+│   └── root.tsx         # App entry point
+├── constants/           # App constants and AI prompts
+├── public/              # Static assets
+├── types/               # TypeScript type definitions
+└── package.json
+```
+
+## 🔧 Environment Variables
+
+**Good news:** This application requires **no environment variables** to run!
+
+Puter.js handles all authentication, storage, and AI capabilities client-side. Users authenticate with their own Puter account, and any AI usage costs are borne by them.
+
+For optional configuration (analytics, production settings), see `.env.example`.
+
+## 🤖 How It Works
+
+1. **Sign In** - Users authenticate via Puter.js (OAuth-style popup)
+2. **Upload Resume** - Upload a PDF resume and optionally provide job details
+3. **AI Analysis** - Claude AI analyzes the resume for:
+   - ATS (Applicant Tracking System) compatibility
+   - Tone and writing style
+   - Content quality and relevance
+   - Document structure and layout
+   - Skills match for the target job
+4. **Get Feedback** - View detailed scores and actionable improvement tips
+5. **Iterate** - Upload updated resumes to track your progress
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run typecheck` | Run TypeScript type checking |
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+```bash
+npm i -g vercel
+vercel
+```
+
+### Docker
+
+```bash
+docker build -t resumify .
+docker run -p 3000:3000 resumify
+```
+
+### Other Platforms
+
+This app can be deployed to any platform that supports Node.js:
+- Netlify
+- Railway
+- Render
+- AWS/GCP/Azure
+
+## 🔐 Privacy & Security
+
+- **Your data stays yours** - Resumes are stored in your personal Puter cloud storage
+- **No server-side storage** - We don't store any of your documents on our servers
+- **Secure authentication** - OAuth-based auth through Puter.js
+- **Client-side processing** - All PDF handling happens in your browser
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- [Puter.js](https://puter.com/) for the amazing client-side SDK
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [React Router](https://reactrouter.com/) for the excellent routing solution
+
+---
+
+<div align="center">
+  <p>Built with ❤️ for job seekers everywhere</p>
+  <p>
+    <a href="#top">⬆️ Back to top</a>
+  </p>
+</div>

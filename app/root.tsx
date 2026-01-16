@@ -21,8 +21,34 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
   },
+  { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+];
+
+export const meta: Route.MetaFunction = () => [
+  { title: "Resumify - AI-Powered Resume Analyzer" },
+  {
+    name: "description",
+    content:
+      "Get instant AI-powered feedback on your resume. Improve your ATS score, enhance content, and land your dream job with Resumify.",
+  },
+  { name: "keywords", content: "resume, ATS, AI, career, job, analyzer, feedback, score" },
+  { property: "og:title", content: "Resumify - AI-Powered Resume Analyzer" },
+  {
+    property: "og:description",
+    content:
+      "Upload your resume and get instant AI feedback. Improve your chances of landing your dream job.",
+  },
+  { property: "og:type", content: "website" },
+  { property: "og:image", content: "/screenshot/home.png" },
+  { name: "twitter:card", content: "summary_large_image" },
+  { name: "twitter:title", content: "Resumify - AI Resume Analyzer" },
+  {
+    name: "twitter:description",
+    content: "Get AI-powered resume feedback instantly",
+  },
+  { name: "theme-color", content: "#6366f1" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -40,7 +66,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="antialiased">
         <script src="https://js.puter.com/v2/"></script>
         {children}
         <ScrollRestoration />
@@ -71,14 +97,22 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-      )}
+    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-indigo-50 to-rose-50">
+      <div className="text-center p-12 bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 max-w-md mx-4">
+        <div className="text-8xl font-black text-gradient mb-4">{message}</div>
+        <p className="text-xl text-slate-600 mb-6">{details}</p>
+        {stack && (
+          <pre className="text-left w-full p-4 overflow-x-auto bg-slate-100 rounded-xl text-sm">
+            <code className="text-slate-700">{stack}</code>
+          </pre>
+        )}
+        <a
+          href="/"
+          className="inline-block mt-6 px-8 py-3 primary-gradient text-white rounded-full font-semibold hover:scale-105 transition-transform"
+        >
+          Go Home
+        </a>
+      </div>
     </main>
   );
 }

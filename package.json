@@ -1,5 +1,5 @@
 {
-  "name": "resume-analyzer",
+  "name": "resumify",
   "private": true,
   "type": "module",
   "scripts": {
